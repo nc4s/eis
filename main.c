@@ -1,4 +1,4 @@
-#include <string.h>
+#include <string.h> // github won't catch this dependency; it doesn't matter since glibc is assumed (because the assembly only runs on Linux)
 
 extern void print_string(const char* msg); // print a string and add a newline
 extern void error_string(const char* msg); // do the same as print_string() but print to stderr
